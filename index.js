@@ -87,6 +87,7 @@ connection.query("SELECT * FROM images", (error, results) => {
 })
 
 
+// Create promise-based function
 function getData() {
   return new Promise((resolve, reject) => {
     connection.query("SELECT * FROM images", (error, results) => {
@@ -98,6 +99,7 @@ function getData() {
     })
   })
 }
+
 
 // use Promise
 getData()
